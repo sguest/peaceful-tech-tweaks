@@ -1,0 +1,25 @@
+{
+  "name": "peaceful-tweak-bobs-equipment",
+  "version": "1.0.0",
+  "main": "dist/data.lua",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:scripts": "tstl -p tsconfig.json",
+    "build:public": "cpx public/**/*.* dist",
+    "dev": "run-p dev:*",
+    "dev:scripts": "concurrently \"tstl -p tsconfig.json --watch",
+    "dev:public": "cpx public/**/*.* dist --watch",
+    "clean": "rimraf dist"
+  },
+  "repository": "https://github.com/sguest/peaceful-tweak-bobs-warfare.git",
+  "author": "sguest <spencer.b.guest@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "cpx": "^1.5.0",
+    "factorio-types": "^0.0.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "typescript-to-lua": "^0.37.0"
+  }
+}

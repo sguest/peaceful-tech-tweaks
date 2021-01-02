@@ -1,0 +1,15 @@
+{
+    "name": "PeacefulTweakBobsEquipment",
+    "version": "0.1.0",
+    "title": "Peaceful Tweak - Bob's Equipment",
+    "author": "Aronson",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "1.0",
+    "dependencies": [
+        "base >= 1.0.0",
+        "? bobwarfare >= 1.0.0",
+        "? bobequipment >= 1.0.0"
+    ],
+    "description": "Change Bob's Warfare and Bob's Personal Equipment to remove military cost and prereq from fusion reactor, power armor, and radar. Intended for use in biter-less plays."
+}
