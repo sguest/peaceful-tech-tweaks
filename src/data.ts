@@ -51,7 +51,17 @@ if(data.raw.technology['bob-power-armor-3']) {
 }
 
 // This is also bob's warfare and could probably share the power armor check, but this feels cleaner
-if(data.raw.technology['radars-4']) {
+if(data.raw.technology['radars-2']) {
+    data.raw.technology['radars-2'].prerequisites = [
+        'radars',
+        'advanced-electronics',
+    ];
+
+    data.raw.technology['radars-3'].prerequisites = [
+        'radars-2',
+        'advanced-electronics-2',
+    ];
+
     data.raw.technology['radars-4'].unit.ingredients = [
         ['automation-science-pack', 1],
         ['logistic-science-pack', 1],
@@ -60,8 +70,6 @@ if(data.raw.technology['radars-4']) {
 
     data.raw.technology['radars-4'].prerequisites = [
         'radars-3',
-        'nitinol-processing',
-        'advanced-electronics-3',
     ];
 }
 
