@@ -1,14 +1,10 @@
 {
+    "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+    "extends": "factorio-types/tsconfig.base.json",
     "compilerOptions": {
-        "target": "esnext",
-        "lib": ["esnext"],
-        "strict": true,
         "baseUrl": ".",
-        "outDir": "dist",
+        "outDir": "dist/PeacefulTechTweaks",
         "rootDir": "src"
-    },
-    "tstl": {
-        "luaTarget": "JIT"
     },
     "include": [
         "src/**/*.ts"

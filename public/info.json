@@ -1,15 +1,15 @@
 {
-    "name": "PeacefulTweakBobsEquipment",
-    "version": "1.0.1",
-    "title": "Peaceful Tweak - Bob's Equipment",
+    "name": "PeacefulTechTweaks",
+    "version": "1.0.0",
+    "title": "Peaceful Tech Tweaks",
     "author": "Aronson",
-    "contact": "",
-    "homepage": "",
+    "contact": "https://github.com/sguest/peaceful-tech-tweaks",
+    "homepage": "https://github.com/sguest/peaceful-tech-tweaks/issues",
     "factorio_version": "1.1",
     "dependencies": [
         "base >= 1.0.0",
-        "? bobwarfare >= 1.1.6",
-        "? bobequipment >= 1.1.2"
+        "? bobwarfare >= 1.2.1",
+        "? bobequipment >= 1.2.1"
     ],
-    "description": "Change Bob's Warfare and Bob's Personal Equipment to remove military cost and prereq from fusion reactor, power armor, and radar. Intended for use in biter-less plays."
+    "description": "Remove military cost and prereqs from Power Armor, Fusion Reactor, and Spidertron. Supports Bob's mods if installed."
 }
