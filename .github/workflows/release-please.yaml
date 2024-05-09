@@ -47,9 +47,11 @@ jobs:
       - name: Setup node
         if: ${{ steps.release-please.outputs.release_created }}
         uses: actions/setup-node@v3
-      - name: npm ci
+      - name: Run install
         if: ${{ steps.release-please.outputs.release_created }}
-        run: npm ci
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
       - name: npm run build
         if: ${{ steps.release-please.outputs.release_created }}
         run: npm run build
